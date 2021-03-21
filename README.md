@@ -1,8 +1,10 @@
-# Jekyll::Meta::Files
+# jekyll-meta-files
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/meta/files`. To experiment with that code, run `bin/console` for an interactive prompt.
+This plugin augments static files with YAML data / front matter in optional metafiles.
 
-TODO: Delete this and the text above, and describe your gem
+DISCLAIMER: The plugin is very simple and relatively specific as it was created for a certain project. It's also not under active development but if you have feedback or even a pull request I am happy to incorprate it.
+
+The basic plugin code is based on the comment [here](https://github.com/jekyll/jekyll/issues/1082#issuecomment-177167222)
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The plugin will automatically augment all static files with additional YAML front matter from an assiciated metafile. The plugin looks for metafiles with the added extensions `\*.meta.yml` in `[documents_url]meta/`. The `documents_url` (with trailing /) should be specified in `config.yml`.
 
 ## Development
 
@@ -32,7 +34,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-meta-files.
+Bug reports and pull requests are welcome on GitHub at https://github.com/irruputuncu/jekyll-meta-files.
 
 ## License
 
